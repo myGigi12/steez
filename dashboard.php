@@ -1,6 +1,5 @@
 <?php
    include 'navbar.php';
-   include 'connection.php';
 
    $user_id = $_SESSION['id'];
    $sql = "SELECT * from customers where  id = '$user_id'";
@@ -18,7 +17,7 @@
                     <span>Balance: <?php echo $user['balance']?></span><br>
                     <span>Account number: <?php echo $user['number']?></span>
                 </div>
-                <a class="btn btn-danger btn-sm">Logout</a>
+                <a href="logout.php" class="btn btn-danger btn-sm">Logout</a>
             </div>
         </div>
 
@@ -30,7 +29,7 @@
                 <a href="withdraw.php" class="w-100 py-4 btn btn btn-outline-danger">Withdraw</a>
             </div>
             <div class="col-md-4">
-                <a href="" class="w-100 py-4 btn btn btn-outline-info">History</a>
+                <a href="transaction.php" class="w-100 py-4 btn btn btn-outline-info">History</a>
             </div>
         </div>
         

@@ -9,10 +9,21 @@
 </head>
 <body>
     <div class="d-flex justify-content-center my-5 bg-dark p-2">
+         <?php
+         include 'connection.php';
+         if ($_SESSION['id'] == Null){
+        ?>
+
+
         <a href="index.php" class="btn btn-light me-2">Register</a>
         <a href="login.php" class="btn btn-light me-2">Login</a>
-        <a href="deposit.php"  class="btn btn-light me-2">Deposit</a>
-        <a href="withdraw.php"  class="btn btn-light me-2">Withdraw</a>
-        <a href="dashboard.php"  class="btn btn-light me-2">Dashboard</a>
-        
+
+        <?php
+        }else{
+        ?>
+            <a href="dashboard.php"  class="btn btn-light me-2">Dashboard</a>
+            <a href="logout.php"  class="btn btn-danger me-2">Logout</a>
+        <?php
+        }
+        ?>
     </div>
