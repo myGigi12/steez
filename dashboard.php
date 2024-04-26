@@ -15,8 +15,8 @@
             <div class="d-flex justify-content-between align-item-center">
                 <div>
                     <h3> Hello! <?php echo $_SESSION['name']?></h3>
-                    <span>Account Balance: <?php echo $user['balance']?></span><br>
-                    <span>Account Balance: <?php echo $user['number']?></span>
+                    <span>Balance: <?php echo $user['balance']?></span><br>
+                    <span>Account number: <?php echo $user['number']?></span>
                 </div>
                 <a class="btn btn-danger btn-sm">Logout</a>
             </div>
@@ -27,7 +27,7 @@
                 <a href="deposit_action.php" class="w-100 py-4 btn btn btn-outline-success">Deposit</a>
             </div>
             <div class="col-md-4">
-                <a href="" class="w-100 py-4 btn btn btn-outline-danger">Withdraw</a>
+                <a href="withdraw.php" class="w-100 py-4 btn btn btn-outline-danger">Withdraw</a>
             </div>
             <div class="col-md-4">
                 <a href="" class="w-100 py-4 btn btn btn-outline-info">History</a>
